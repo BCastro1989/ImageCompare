@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Comparer</title>
+  <!-- <meta charset="utf-8"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <link rel="shortcut icon" href="static/img/favicon.ico"> -->
+  <!-- <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="static/main.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="static/imagedisplay.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>The Auto-Image Comparer 9000 </h1>
+    <p>Upload an image, and it will be compared to all the previously uploaded images. Find the top 3 most similar images!</p>
+  </div>
+</div>
+
+<div class="content">
+<div class="container uploadhere">
+  <div class="col-sm-4 container">
+    <div class="header">
+      <h3>Upload an Image</h3>
+    </div>
+
+    <div>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file" class="file-select">
+      <input type="submit" id="upload-btn"  value="Upload!">
+    </form>
+    </div>
+    <p> Uploaded File MUST be a .jpg or .png image!<p>
+  </div>
+  <div class="col-sm-8">
+    <p>Uploaded Image: <span id="uploaded-img-name"></span></p>
+    <img src="/static/img/placeholder.jpg" id="uploaded-img" class="img-responsive">
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center similar-imgs">
+  <h3>Top 3 Similar Images</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>1: <span id="similar-img-1-name"></span> - <span id="similar-img-1-percent"></span>% Match </p>
+      <img src="/static/img/placeholder.jpg" id="similar-img-1" class="img-responsive">
+    </div>
+    <div class="col-sm-4">
+      <p>2: <span id="similar-img-2-name"> </span> - <span id="similar-img-2-percent"></span>% Match </p>
+      <img src="/static/img/placeholder.jpg" id="similar-img-2" class="img-responsive">
+    </div>
+    <div class="col-sm-4">
+      <p>3: <span id="similar-img-3-name"> </span> - <span id="similar-img-3-percent"></span>% Match </p>
+      <img src="/static/img/placeholder.jpg" id="similar-img-3" class="img-responsive">
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Developed by Brian Castro</p>
+</footer>
+
+</body>

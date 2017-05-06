@@ -1,0 +1,40 @@
+footer {
+  background-color: #111;
+  padding: 25px;
+}
+p,span,h1,h2,h3,div{
+  color: #eee;
+}
+input{
+  margin: 10px;
+}
+.jumbotron {
+  margin-bottom: 0px;
+  background: url(img/camera.png) no-repeat bottom center;
+  background-size: cover;
+  /*opacity: 0.3;*/
+}
+/*.jumbotron h1,
+.jumbotron p{
+    color: #000;
+    opacity: 1;
+}*/
+#upload-btn{
+    color: #000;
+}
+.similar-imgs{
+  display: none;
+}
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.content{
+  background-color: #333;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.img-responsive {
+  width:100%
+}
